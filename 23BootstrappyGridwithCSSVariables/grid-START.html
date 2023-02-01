@@ -19,7 +19,17 @@
   </div>
 
   <style>
-    .grid {}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      min-width: 0;
+      width: 100%;
+      grid-column: span 1;
+    }
   </style>
 
 </body>
